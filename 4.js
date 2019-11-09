@@ -11,7 +11,7 @@ function decrypt(str){
     let encoded = "";
    for (let i=0; i<str.length;i++) {
        let a = str.charCodeAt(i);
-       let b = a ^ 4;    // bitwise XOR with any number, e.g. 123
+       let b = a ^ 4;  
        encoded = encoded+String.fromCharCode(b);
    }
    return encoded;
