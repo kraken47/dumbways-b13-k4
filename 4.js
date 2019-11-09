@@ -8,13 +8,13 @@ function encrypt(str){
     return result;
 }
 function decrypt(str){
-    let encoded = "";
+    let result = "";
    for (let i=0; i<str.length;i++) {
        let a = str.charCodeAt(i);
        let b = a ^ 4;  
-       encoded = encoded+String.fromCharCode(b);
-   }
-   return encoded;
+       result += String.fromCharCode(b)
+    }
+    return result;
 }
 console.log(encrypt("Lucinta"));
 console.log(decrypt("Hqgmjpe"));
